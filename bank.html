@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container mx-auto mt-8">
+            <h1 class="text-5xl font-bold text-center">Welcome to My <span class="text-red-500">Bank</span> </h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container mx-auto mt-8 w-3/4">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-lime-100 rounded-lg p-8">
+                        <h3 class="text-3xl font-bold">Deposite</h3>
+                        <p class="text-5xl font-bold">$<span id='deposite'>00</span></p>
+                    </div>
+                    <div class="bg-amber-100 rounded-lg p-8">
+                        <h3 class="text-3xl font-bold">Widthdraw</h3>
+                        <p class="text-5xl font-bold">$00</p>
+                    </div>
+                    <div class="bg-blue-100 rounded-lg p-8">
+                        <h3 class="text-3xl font-bold">Balance</h3>
+                        <p class="text-5xl font-bold">$<span id="blance-total">1240</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-8">
+                <div class="bg-lime-100 rounded-lg p-8">
+                    <input class="block w-9/12 px-3 py-2 mb-4" type="text" name="" id="deposite-input" placeholder="Enter Deposit Amount">
+                    <button id="deposite-btn" class="bg-lime-500 px-3 py-2 rounded-lg font-bold text-white hover:bg-lime-800">Deposit</button>
+                </div>
+                <div class="bg-lime-100 rounded-lg p-8">
+                    <input class="block w-9/12 px-3 py-2 mb-4" type="text" name="" id="" placeholder="$Enter Widthdraw Amount">
+                    <button class="bg-lime-500 px-3 py-2 rounded-lg font-bold text-white hover:bg-lime-800">Widthdraw</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+</html>
